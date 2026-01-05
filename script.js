@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded',function () {
         if(input_text === "") {
             return ;
         }
-        const url = `http://api.openweathermap.org/geo/1.0/direct?q=${input_text}&limit=5&appid=346892741660357f3135aca487e6c943${temp_unit[0]}`;
+        const url = `https://api.openweathermap.org/geo/1.0/direct?q=${input_text}&limit=5&appid=346892741660357f3135aca487e6c943${temp_unit[0]}`;
         const result  = await fetch(url) ;
         const data = await result.json() ;
         // console.log(data) ;
@@ -352,3 +352,4 @@ document.addEventListener('DOMContentLoaded',function () {
             }) ;
             //////
 });
+
