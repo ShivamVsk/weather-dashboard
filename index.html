@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0..1,0&icon_names=air,airwave,cloud,dark_mode,device_thermostat,humidity_percentage,light_mode,location_on,my_location,readiness_score,search,star,visibility,water_lux,wb_twilight" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <div class = "header">
+        <div class="search_box">
+            <div class="search_bar">
+                <input class = "search_input" type="text" placeholder = "Enter area" />
+                <button class = "search_button">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <!-- <div class = "suggestions"> -->
+                <ul class = "list">
+                </ul>
+            <!-- </div> -->
+	    </div>
+        <div class = "favorites">
+        </div>
+    </div>
+    <div class = "action_buttons">
+        <div id="rightpart">
+            <button id="getcurrlocbut" class = "headerbuts">
+                <span class="material-symbols-outlined">my_location</span>
+            </button>
+            <button id = "celciusbut" class = "headerbuts">°C</button>
+            <button id = "Fahrenbut" class = "headerbuts">°F</button>
+            <button id = "darkmodebut" class = "headerbuts">
+                <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+            <button id ="lightmodebut" class = "headerbuts">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+        </div>
+    </div>
+    <div class = "Currentlocation">
+        <ul id = "locat"></ul>
+        <span class="material-symbols-outlined star">star</span>
+    </div>
+    <div id = "main" >
+        <p id = "curweat">Current Weather</p>
+        <p id = "current_time"></p>
+        <div id = "icon_temp_sky_feels_like">
+            <img id = "icon_img">
+            <p id ="cur_temp"></p>
+            <ul>
+                <li><p id = "cur_sky"></p></li>   
+                <li><p id = "cur_feels_like"></p></li>
+                <li><p id = "min_temp"></p></li>
+                <li><p id = "max_temp"></p></li>
+            </ul>
+        </div>
+        <p id = "weather_descr"></p>
+        <div id = "other_para">
+            <div id="pressure" class = "other_para">
+                <span class="material-symbols-outlined">readiness_score</span>
+                <li id = "hpress"></li>
+                <li id = "ppress"></li>
+            </div>
+            <div id="humidity" class = "other_para">
+                <span class="material-symbols-outlined">humidity_percentage</span>
+                <li id = "hhumid"></li>
+                <li id = "phumid"></li>
+            </div>
+            <div id="visibility" class = "other_para">
+                <span class="material-symbols-outlined">visibility</span>
+                <li id = "hvis"></li>
+                <li id = "pvis"></li>
+            </div>
+            <div id="wind" class = "other_para">
+                <span class="material-symbols-outlined">airwave</span>
+                <li id = "hwind"></li>
+                <li id = "pwind"></li>
+            </div>
+            <div id="clouds" class = "other_para">
+                <span class="material-symbols-outlined">cloud</span>
+                <li id = "hcld"></li>
+                <li id = "pcld"></li>
+            </div>
+            <div id="sunrise" class = "other_para">
+                <span class="material-symbols-outlined">water_lux</span>
+                <li id = "hsunr"></li>
+                <li id = "psunr"></li>
+            </div>
+            <div id="sunset" class = "other_para">
+                <span class="material-symbols-outlined">wb_twilight</span>
+                <li id = "hsuns"></li>
+                <li id = "psuns"></li>
+            </div>
+        </div>
+    </div>
+    <div class = "Forecast_div">
+        <p>Forecast Weather</p>
+        <div class = "day_cards">
+        </div>
+        <div class = "hour_cards">
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
